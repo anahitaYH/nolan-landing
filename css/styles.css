@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Telegrapgh";
+    src:
+      url("../fonts/Telegraph/Telegraph.eot") format("eot"),
+      url("../fonts/Telegraph/Telegraph.otf") format("otf"),
+      url("../fonts/Telegraph/Telegraph.ttf") format("ttf"),
+      url("../fonts/Telegraph/Telegraph.woff") format("woff"),
+      url("../fonts/Telegraph/Telegraph.woff2") format("woff2"),
+      url("../fonts/Telegraph/Telegraph.svg") format("svg");
+  }
+  
+  @font-face {
+    font-family: "Helvetica-Neue";
+    src:
+      url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular/Helvetica-Neue-Regular.eot") format("eot"),
+      url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular/Helvetica-Neue-Regular.otf") format("otf"),
+      url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular/Helvetica-Neue-Regular.ttf") format("ttf"),
+      url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular/Helvetica-Neue-Regular.woff") format("woff"),
+      url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular/Helvetica-Neue-Regular.woff2") format("woff2"),
+      url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular/Helvetica-Neue-Regular.svg") format("svg");
+  }
+
+body {
+    background-color: #272627;
+    color: #fff;
+    font-family: 'Helvetica-Neue';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.title-container{
+    background-color: #F25123;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 64px;
+    margin-top: 100px;
+}
+
+.title-en{
+    color: #5E2617;
+    font-weight: 100;
+    margin: 0;
+    line-height: 15px;
+    font-size: 25px;
+}
+
+.title-fa{
+font-weight: bold;
+margin: 0;
+line-height: 15px;
+font-size: 25px;
+}
+
+.movie-poster{
+    width: 100px;
+}
