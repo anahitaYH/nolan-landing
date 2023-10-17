@@ -20,6 +20,8 @@
       url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular/Helvetica-Neue-Regular.svg") format("svg");
   }
 
+
+
 body {
     background-color: #272627;
     color: #fff;
@@ -27,17 +29,33 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .title-container{
-    background-color: #F25123;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 64px;
-    margin-top: 100px;
+  background-color: #F25123;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 64px;
+  margin-top: 100px;
+}
+
+.movie-card-container{
+  margin-left: 4%;
+}
+
+.movie-card-container:first-child{
+  margin-left: 0;
+}
+
+#movies-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
 }
 
 .title-en{
@@ -56,5 +74,70 @@ font-size: 25px;
 }
 
 .movie-poster{
-    width: 100px;
+  width: 271px;
+  height: 396px;
+  cursor: pointer;
+}
+
+.movie-vhs{
+  width: 55px;
+  height: 372px;
+  cursor: pointer;
+}
+
+.movie-vhs.show{
+  display: block;
+}
+
+.movie-vhs.hide{
+  display: none;
+}
+
+.movie-poster.show{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s ease all;
+}
+
+.movie-poster.hide{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: 0.4s ease all;
+}
+
+.movie-card-container.clicked{
+  width: 271px;
+  transition: .6s ease all;
+}
+
+.movie-card-container:not(.clicked){
+  width: 55px;
+  transition: .6s ease all;
+}
+
+.title,
+.year{
+  display: none;
+  text-align: center;
+}
+
+.movie-card-container.clicked > .title,
+.movie-card-container.clicked > .year{
+  display: block;
+}
+
+.title{
+  margin: 10px 0;
+}
+
+.year{
+  color: #F25123;
+}
+
+
+@media (max-width:800px){
+  .movie-poster.open{
+    margin: 0 10%;
+  }
 }
